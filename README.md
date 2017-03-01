@@ -8,6 +8,7 @@ Installl with pip
 * [praw](https://github.com/praw-dev/praw) reddit api
 * [tweepy](https://github.com/praw-dev/praw) twitter api
 * [selenium](https://github.com/baijum/selenium-python)
+* [bintrees](https://pypi.python.org/pypi/bintrees/2.0.2)
 
 ## Setup
 
@@ -31,7 +32,6 @@ token and secret
 
 1. https://ssl.reddit.com/prefs/apps create the app
 2. Client secret and id will be displayed under the "edit" link in the reddit app
-[](img/preferences  reddit.com .png)
 3. Enter the credentials to configure.json
 
 ### Initialize Selenium (Allternative method for access token and secret)
@@ -50,12 +50,13 @@ get_access_token.py requires Selenium to fetch access token.
     ```python
       webdriver.Firefox()
     ```
+ 
 ## Twitter List to follow
 
 In twitter_handles.json add a list of Twitter handles to follow.  "name" key can be set arbitrarily it will appear in the reddit
 post as:
 
-"[<name>] <tweet content from the handle>"
+"[\<name\>] \<tweet content from the handle\>"
 
 Example of NBA Correspondents to follow.
 
