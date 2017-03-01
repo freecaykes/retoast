@@ -19,7 +19,7 @@
 # https://github.com/bear/python-twitter
 #
 # The script has been modified to use Selenium to automate the process of getting
-# twitter pincode.  geckodriver needs to be installed
+# twitter pincode. geckodriver needs to be installed
 
 from __future__ import print_function
 
