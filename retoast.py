@@ -35,7 +35,7 @@ subreddit_str = ""
 reddit_url = "https://reddit.com/"
 twitter_url = "https://twitter.com/"
 
-GET_INTERVAL = 300  # 5 minutes
+GET_INTERVAL = 300  # 5 minutes avoid choosing too low of number - RateLimitError
 UTF_8 = 'utf-8'
 
 
@@ -141,7 +141,7 @@ def signal_post_handler(signum, stack):
 
 def main():
     global handles_in_a_tree
-    global handle_list_key, subreddit
+    global handle_list_key, subreddit_str
 
     # account configuration
     configure_src = open(configuration)
