@@ -50,6 +50,7 @@ get_access_token.py requires Selenium to fetch access token.
     ```python
       webdriver.Firefox()
     ```
+    
 ## Twitter List to follow
 
 In twitter_handles.json add a list of Twitter handles to follow.  "name" key can be set arbitrarily it will appear in the reddit
